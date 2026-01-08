@@ -12,7 +12,7 @@ public class Nodo
     
 
     //Constructor
-    public Nodo(String nota, String figura)
+    public Nodo(string nota, string figura)
     {
         partitura = (nota, figura);
         siguiente = null;
@@ -26,7 +26,7 @@ public class Lista_Doble_MusicBox
 {
     public Nodo? cabeza;
     public Nodo? nodo_viejo;
-    public Nodo? valor_nodo;
+    
     
     public Lista_Doble_MusicBox()
     {
@@ -57,8 +57,24 @@ public class Lista_Doble_MusicBox
 
     public void reproducir_partitura()
     {
-       
+        Nodo? cabeza_2 = cabeza;
 
+        while(cabeza_2 != null)
+        {
+            Console.WriteLine($"Nota: {cabeza_2.partitura.nota}, Figura: {cabeza_2.partitura.figura}");
+            cabeza_2 = cabeza_2.siguiente;
+        }
+    }
+
+    public void reproducir_partitura_alreves()
+    {
+        Nodo? cabeza_2 = nodo_viejo;
+
+        while(cabeza_2 != null)
+        {
+            Console.WriteLine($"Nota: {cabeza_2.partitura.nota}, Figura: {cabeza_2.partitura.figura}");
+            cabeza_2 = cabeza_2.anterior;
+        }
     }
 
 }
@@ -67,6 +83,18 @@ class Programa
 {
     static void Main(string[] args)
     {
-        
+        Lista_Doble_MusicBox lista = new Lista_Doble_MusicBox();
+        lista.insertar_partituras(("Do", "Negra"));
+        lista.insertar_partituras(("Re", "Semi"));
+        lista.insertar_partituras(("Fa", "Corchea"));
+        lista.insertar_partituras(("Mi", "Blanca"));
+        lista.insertar_partituras(("Do", "Redonda"));
+        lista.insertar_partituras(("La", "Negra"));
+
+        lista.reproducir_partitura();
+        Console.WriteLine("**********************************");
+        Console.WriteLine("************Lista al reves**************");
+        lista.reproducir_partitura_alreves();
+
     }
 }
