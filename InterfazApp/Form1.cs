@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using listadoble;
-using notas;
+using MusicBox.core;
 
 namespace InterfazApp
 {
