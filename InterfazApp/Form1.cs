@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-<<<<<<< HEAD
 using MusicBox.core;
-=======
->>>>>>> 94dfd5bc9b72ff1b971c2a48c666bcc782ed5fa5
 
 namespace InterfazApp
 {
@@ -20,10 +17,7 @@ namespace InterfazApp
         private Label lblNotas;
         private Label lblFiguras;
         private Label lblValor;
-<<<<<<< HEAD
         private Lista_Doble_MusicBox lista = new Lista_Doble_MusicBox();
-=======
->>>>>>> 94dfd5bc9b72ff1b971c2a48c666bcc782ed5fa5
 
         public Form1()
         {
@@ -33,10 +27,7 @@ namespace InterfazApp
 
         private void InitializeCustomComponents()
         {
-<<<<<<< HEAD
             btnPlay.Click += BtnPlay_Click;
-=======
->>>>>>> 94dfd5bc9b72ff1b971c2a48c666bcc782ed5fa5
             this.Text = "MusicBox";
             this.Size = new Size(500, 450);
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -113,7 +104,6 @@ namespace InterfazApp
             string nota = cbNotas.SelectedItem.ToString();
             string figura = cbFiguras.SelectedItem.ToString();
 
-<<<<<<< HEAD
             lista.insertar_partitura((nota, figura));
             lstNotas.Items.Add($"{nota} - {figura}");
 
@@ -124,9 +114,5 @@ namespace InterfazApp
         {
             lista.reproducir_partitura();
         }   
-=======
-            lstNotas.Items.Add($"{nota} - {figura}");
-        }
->>>>>>> 94dfd5bc9b72ff1b971c2a48c666bcc782ed5fa5
     }
 }
