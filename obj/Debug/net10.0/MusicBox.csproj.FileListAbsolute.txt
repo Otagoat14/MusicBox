@@ -1,0 +1,15 @@
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.AssemblyInfoInputs.cache
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.AssemblyInfo.cs
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.csproj.CoreCompileInputs.cache
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.sourcelink.json
+C:\Users\ricar\Desktop\Music Box\MusicBox\bin\Debug\net10.0\MusicBox.exe
+C:\Users\ricar\Desktop\Music Box\MusicBox\bin\Debug\net10.0\MusicBox.deps.json
+C:\Users\ricar\Desktop\Music Box\MusicBox\bin\Debug\net10.0\MusicBox.runtimeconfig.json
+C:\Users\ricar\Desktop\Music Box\MusicBox\bin\Debug\net10.0\MusicBox.dll
+C:\Users\ricar\Desktop\Music Box\MusicBox\bin\Debug\net10.0\MusicBox.pdb
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.dll
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\refint\MusicBox.dll
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.pdb
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\MusicBox.genruntimeconfig.cache
+C:\Users\ricar\Desktop\Music Box\MusicBox\obj\Debug\net10.0\ref\MusicBox.dll
