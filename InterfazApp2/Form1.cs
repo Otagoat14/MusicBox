@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using MusicBox.core;
 
-namespace InterfazApp
+namespace InterfazApp2
 {
     public partial class Form1 : Form
     {
@@ -25,16 +25,24 @@ namespace InterfazApp
             InitializeCustomComponents();
         }
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ClientSize = new Size(500, 450);
+            this.Name = "Form1";
+            this.Text = "MusicBox";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.ResumeLayout(false);
+        }
+
         private void InitializeCustomComponents()
         {
-            btnPlay.Click += BtnPlay_Click;
-            this.Text = "MusicBox";
-            this.Size = new Size(500, 450);
-            this.StartPosition = FormStartPosition.CenterScreen;
+            MessageBox.Show("UI inicializada");
 
             lblNotas = new Label();
             lblNotas.Text = "Nota:";
             lblNotas.Location = new Point(30, 30);
+            lblNotas.AutoSize = true;
 
             cbNotas = new ComboBox();
             cbNotas.Location = new Point(150, 30);
@@ -47,6 +55,7 @@ namespace InterfazApp
             lblFiguras = new Label();
             lblFiguras.Text = "Figura:";
             lblFiguras.Location = new Point(30, 70);
+            lblFiguras.AutoSize = true;
 
             cbFiguras = new ComboBox();
             cbFiguras.Location = new Point(150, 70);
@@ -59,6 +68,7 @@ namespace InterfazApp
             lblValor = new Label();
             lblValor.Text = "Valor de la negra:";
             lblValor.Location = new Point(30, 110);
+            lblValor.AutoSize = true;
 
             txtValorNegra = new TextBox();
             txtValorNegra.Location = new Point(150, 110);
@@ -75,10 +85,12 @@ namespace InterfazApp
             btnPlay = new Button();
             btnPlay.Text = "Play";
             btnPlay.Location = new Point(30, 320);
+            btnPlay.Click += BtnPlay_Click;
 
             btnPlayReversa = new Button();
             btnPlayReversa.Text = "Play Reversa";
             btnPlayReversa.Location = new Point(150, 320);
+            btnPlayReversa.Click += BtnPlayReversa_Click;
 
             this.Controls.Add(lblNotas);
             this.Controls.Add(cbNotas);
@@ -92,7 +104,6 @@ namespace InterfazApp
             this.Controls.Add(btnPlayReversa);
         }
 
-        // Esto solo es visual para ver que la interfaz funcionara
         private void BtnInsertar_Click(object sender, EventArgs e)
         {
             if (cbNotas.SelectedItem == null || cbFiguras.SelectedItem == null)
@@ -106,13 +117,17 @@ namespace InterfazApp
 
             lista.insertar_partitura((nota, figura));
             lstNotas.Items.Add($"{nota} - {figura}");
-
-            
         }
 
         private void BtnPlay_Click(object sender, EventArgs e)
         {
             lista.reproducir_partitura();
-        }   
+        }
+
+        private void BtnPlayReversa_Click(object sender, EventArgs e)
+        {
+            // Implementar reproducción reversa
+            MessageBox.Show("Play Reversa - Por implementar");
+        }
     }
 }

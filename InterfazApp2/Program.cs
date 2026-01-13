@@ -1,15 +1,16 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
-namespace InterfazApp
+namespace InterfazApp2
 {
-    internal static class Program
+    static class Program
     {
+
         [STAThread]
         static void Main()
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-        }
+        }    
     }
 }
