@@ -1,3 +1,7 @@
+using System.Linq.Expressions;
+using System.Collections.Generic;
+
+
 namespace notas
 {
     public class ReproductorMusical
