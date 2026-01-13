@@ -80,10 +80,14 @@ namespace MusicBox.core
         public void reproducir_partitura_alreves()
         {
             Nodo? cabeza_2 = nodo_viejo;
+            ReproductorMusical reproductor = new ReproductorMusical();
 
             while(cabeza_2 != null)
             {
-                Console.WriteLine($"Nota: {cabeza_2.partitura.nota}, Figura: {cabeza_2.partitura.figura}");
+                var (nota, figura) = cabeza_2.getDato();
+                int Frecuencia_actual = reproductor.ObtenerFrecuencia(nota);
+                int Tiempo = reproductor.ObtenerMs(figura);
+                Console.Beep(Frecuencia_actual, Tiempo);
                 cabeza_2 = cabeza_2.anterior;
             }
         }

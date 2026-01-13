@@ -88,7 +88,7 @@ namespace InterfazApp2
             btnPlay.Click += BtnPlay_Click;
 
             btnPlayReversa = new Button();
-            btnPlayReversa.Text = "Play Reversa";
+            btnPlayReversa.Text = "Revers";
             btnPlayReversa.Location = new Point(150, 320);
             btnPlayReversa.Click += BtnPlayReversa_Click;
 
@@ -126,8 +126,7 @@ namespace InterfazApp2
 
         private void BtnPlayReversa_Click(object sender, EventArgs e)
         {
-            // Implementar reproducción reversa
-            MessageBox.Show("Play Reversa - Por implementar");
+            lista.reproducir_partitura_alreves();
         }
     }
 }
